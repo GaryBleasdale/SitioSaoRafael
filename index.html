@@ -6,10 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              fontFamily: {
+                'inter': ['inter', 'ui-serif'],
+              }
+            }
+          }
+        }
+      </script>
 </head>
-<body>
-    <h1 class="text-3xl font-bold underline">
-        Hello world!
-      </h1>
+<body class="font-inter bg-gradient-to-b from-yellow-400 to-lime-600 h-screen">
+    <div class=" ">
+        <nav class="flex" id="nav-container">
+            <div class=" flex flex-row items-center w-3/4 justify-center m-auto py-8" id="nav-inner">
+                <div class="flex items-center flex-col mr-5" id="nav-name">
+                    <h1 class="text-5xl  font-bold text-slate-900">SÍTIO SÃO RAFAEL</h1>
+                    <h5 class="text-3xl text-slate-900">São Miguel Arcanjo, SP</h5>
+                    <h5 class=" text-xl text-slate-900">CNPJ 41.423.454/0001-52</h5>
+                </div>
+               <img src="./assets/cabotia_1 1.png" class="w-52  ml-5 ">
+            </div>
+        </nav>
+        <main class="text-2xl">
+            <div class="p-20">            <!--Google Map-->
+                <div >
+                    <ul>
+                        <li>Produção: Abóboras Cabotiá e Moranga</li>
+                        <li>Área plantada: +50.000m&#178</li>
+                        <li>Localização: Bairro Retiro, a 10km da cidade de São Miguel Arcanjo, SP (<a href='https://tinyurl.com/45amts5u'>click aquí para ver no Google Maps</a>)</li>
+                        <li>Preço: preço de mercado (CEAGESP Sorocaba) no día da compra</li>
+                        <li>Área de entrega:
+                            <ul>
+                                <li>Sorocaba</li>
+                                <li>Votorantim</li>
+                                <li>Salto de Pirapora</li>
+                                <li>Pilar de Sul</li>
+                                <li>São Miguel Arcanjo</li>
+                                <li>Itapetininga</li>
+                                <li>Sarapuí</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!--Safra atual-->
+                <div>
+                <h3>Safra atual</h3>
+                </div>
+            </div>
+        </main>
+    </div>
+    <a href='https://api.whatsapp.com/send?phone=5555159810129' class="fixed bottom-20 right-20 w-24"><img src="./assets/whatsapp-icon-logo-6E793ACECD-seeklogo.com.png"></a>
 </body>
 </html>
