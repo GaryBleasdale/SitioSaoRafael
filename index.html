@@ -8,13 +8,15 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Kaushan+Script&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./assets/Group 3 (3).png">  
     <script>
         tailwind.config = {
           theme: {
             extend: {
               fontFamily: {
                 'inter': ['inter', 'ui-serif'],
+                'kaushan': ['kaushan script', 'ui-serif']
               },
               backgroundImage: {
                 'desktop-bg': "url('./assets/ssr_desktop.png')",
@@ -25,11 +27,11 @@
     }
       </script>
 </head>
-<body class="font-inter bg-mobile-bg md:bg-desktop-bg bg-cover bg-amber-200 pb-36 sm:p-0">
+<body class="font-inter bg-mobile-bg md:bg-desktop-bg bg-cover bg-amber-200 pb-36">
     <div class="">
         <nav class="" id="nav-container">
             <div class=" flex  items-center md:w-3/4 justify-center m-auto py-8 flex-col " id="nav-inner">
-                <div class="flex items-center flex-col mr-5 text-center	" id="nav-name">
+                <div class="flex items-center flex-col mr-5 text-center font-kaushan	" id="nav-name">
                     <h1 class="text-5xl  font-bold text-slate-900 my-2">SÍTIO SÃO RAFAEL</h1>
                     <h5 class="md:text-3xl text-slate-900 sm:text-xl text-xl my-2">São Miguel Arcanjo • São Paulo</h5>
                     <h5 class=" text-xl text-slate-900 my-2">CNPJ 41.423.454/0001-52</h5>
@@ -41,26 +43,26 @@
             <div class="">            
                 <div class= " flex flex-wrap max-w-6xl w-auto m-auto align-center justify-center" id="card-container">
                     <div class="p-10 bg-lime-700 rounded-lg bg-opacity-80 text-amber-300 m-10 w-72	" id="card-producao">
-                        <h3> 🧑‍🌾 Produção</h3>
-                        <h5>Abóboras Cabotiá e Moranga</h5>
+                        <h3 class="text-center text-3xl mb-5"> 🧑‍🌾 <br> Produção</h3>
+                        <h5 class="text-center text-xl">Abóboras Cabotiá (Tetsukabuto Híbrida Takayama F1) e Moranga</h5>
                     </div>
                     <div class="p-10 bg-lime-700 rounded-lg bg-opacity-80 text-amber-300 m-10 w-72	" id="card-area-plantada">
-                        <h3> 🌿 Área plantada</h3>
-                        <h5>+50.000m&#178</h5>
+                        <h3 class="text-center text-3xl mb-5"> 🌿 <br> Área plantada</h3>
+                        <h5 class="text-center text-2xl">+50.000m&#178</h5>
                     </div>
                     <div class="p-10 bg-lime-700 rounded-lg bg-opacity-80 text-amber-300 m-10 w-72	" id="card-localizacao">
-                        <h3>🧭 Localização</h3>
-                        <h5>Bairro Retiro, a 10km da cidade de São Miguel Arcanjo, SP (<a href='https://tinyurl.com/45amts5u'>click aquí para ver no Google Maps</a>)</h5>
+                        <h3 class="text-center text-3xl mb-5">🧭<br>Localização</h3>
+                        <h5 class="text-center text-xl">Bairro Retiro, a 10km da cidade de São Miguel Arcanjo, SP.   <a class="underline hover:text-amber-800 ease-in-out duration-300" href='https://tinyurl.com/45amts5u'>Clique aquí para ver no Google Maps</a></h5>
                     </div>
                     <div class="p-10 bg-lime-700 rounded-lg bg-opacity-80 text-amber-300 m-10 w-72	" id="card-preco">
-                        <h3>🧾 Preço</h3>
-                        <h5>Preço: preço de mercado (CEAGESP Sorocaba) no día da compra</h5>
+                        <h3 class="text-center text-3xl mb-5">🧾 <br> Preço</h3>
+                        <h5 class="text-center text-xl">Valor de mercado (CEAGESP Sorocaba) no día da compra.  <a class="underline hover:text-amber-800 ease-in-out duration-300" href='https://ceagesp.gov.br/cotacoes/#cotacao'>Confira os preços aqui</a></h5>
                     </div>
                     <div class="p-10 bg-lime-700 rounded-lg bg-opacity-80 text-amber-300 m-10 w-72" id="card-entrega">
-                        <h3>🚛 Entregas</h3>
-                        <h5>Entregas nos seguintes municípios:</h5>
-                        <ul>
-                            <li>Sorocaba</li>
+                        <h3 class="text-center text-3xl mb-5">🚛<br> Entregas</h3>
+                        <h5 class="text-center text-xl mb-5">Entregamos nos seguintes municípios:</h5>
+                        <ul class="text-xl text-center italic">
+                            <li class="text-xl">Sorocaba</li>
                             <li>Votorantim</li>
                             <li>Salto de Pirapora</li>
                             <li>Pilar de Sul</li>
@@ -70,8 +72,8 @@
                         </ul>
                     </div>
                     <div class="p-10 bg-lime-700 rounded-lg bg-opacity-80 text-amber-300 m-10 w-72" id="card-preco">
-                        <h3>🌞 Previsão da próxima colheita </h3>
-                        <h5> 70 toneladas, a partir do dia 1/3/23 </h5>
+                        <h3 class="text-center text-3xl mb-5">🌞 Previsão da próxima colheita </h3>
+                        <h5 class="text-center"> <strong>60 toneladas cabotiá, 10 toneladas moranga, a partir do dia 1/3/23 </strong></h5>
                     </div>
                 <div>
                 
